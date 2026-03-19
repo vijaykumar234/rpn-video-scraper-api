@@ -45,6 +45,6 @@ app.get("/video", async (req, res) => {
 app.get("/test", (req, res) => {
     res.send("Test route working");
 });
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log("Server running...");
 });
